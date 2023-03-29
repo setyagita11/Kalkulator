@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cb997e"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="681dp"
+        android:background="@drawable/ic_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Calculator Custom"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/bilangansatu"
+            android:layout_width="151dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Bilangan Satu"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/bilangandua"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/bilangandua"
+            android:layout_width="151dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Bilangan Dua"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="153dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="35dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bilangandua" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="324dp"
+            android:layout_height="328dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/ic_bg2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnplus"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ddbea9"
+                android:text="+"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.685"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnminus" />
+
+            <Button
+                android:id="@+id/btnkali"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#ddbea9"
+                android:text="X"
+                app:layout_constraintEnd_toStartOf="@+id/btnplus"
+                app:layout_constraintHorizontal_bias="0.789"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnbagi" />
+
+            <Button
+                android:id="@+id/btnminus"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="35dp"
+                android:backgroundTint="#ddbea9"
+                android:text="-"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.683"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnbagi"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="35dp"
+                android:backgroundTint="#ddbea9"
+                android:text=":"
+                app:layout_constraintEnd_toStartOf="@+id/btnminus"
+                app:layout_constraintHorizontal_bias="0.785"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnreset"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#ddbea9"
+                android:text="Reset"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnplus" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
